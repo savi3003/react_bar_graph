@@ -1,0 +1,59 @@
+.bar-item{
+    flex: 1;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    animation: fill 1.5s
+}
+@keyframes fill {
+    0% { height: 0; }
+ }
+.bar-item:hover{
+    opacity: 0.6;
+}
+
+.bar-item-label {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    padding-top: 10px;
+    color: #999999;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+}
+
+.bar-item:hover .bar-item-label {
+    color: #2c2c2c;
+    font-size: 15px;
+}
+
+.bar-item-label{
+    position: relative;
+    top: 100%;
+    width: 100%;
+    padding-top: 10px;
+    color: #999999;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+}
+
+.bar-item:hover .bar-item-label{
+    color: black;
+}
+
+.bar-item-num{
+    position: relative;
+    width: 100%;
+    padding-top: 10px;
+    font-size: 12px;
+    font-weight: 00;
+    line-height: 14px;
+    text-align: center;
+    visibility: hidden;
+}
+
+.bar-item:hover .bar-item-num{
+    visibility: visible;
+    color: black;
+}
